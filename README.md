@@ -4,7 +4,23 @@
 
 ## on_action
 
+Called when the entity can act (?)
+
+Applies to: entities
+
+    function ( self, entity, time_passed, last )
+
+time_passed: in-game time since the last call
+
+entity: the entity this object is attached to
+
 ## on_activate
+
+"Action" button is used (?)
+
+Applies to: entities (incl. menus in terminal)
+
+    function( self, who, level, param, id )
 
 ## on_activate_other
 
@@ -13,6 +29,10 @@
 ## on_adrenaline
 
 ## on_aim
+
+Applies to: entities
+
+    function ( self, entity, target, weapon )
 
 ## on_apply_damage
 
@@ -34,9 +54,17 @@
 
 ## on_cleared
 
+Called when the level is cleared (when the level title turns blue)
+
+Applies to: events, …
+
+    function ( self, level )
+
 ## on_collide
 
 ## on_create
+
+Applies to: everything
 
 ## on_create_entity
 
@@ -57,6 +85,14 @@
 ## on_enter
 
 ## on_enter_level
+
+Applies to: events, …
+
+Events:
+    function ( self, level, entity, reenter )
+
+Entity:
+    function ( self, entity, reenter )
 
 ## on_entity
 
@@ -275,6 +311,10 @@
 ## world:get_player
 
 ## world:get_position
+
+Get the position of an entity.
+
+    local c = world:get_position( e )
 
 ## world:get_quest
 
@@ -557,4 +597,130 @@
 ## COMMAND_USE
 
 ## COMMAND_WAIT
+
+# GTK
+
+## gtk.add_station_list
+
+## gtk.add_station_manufacture
+
+## gtk.can_regenerate
+
+## gtk.get_detonation_position
+
+## gtk.get_event_ui
+
+## gtk.get_weapon_group
+
+## gtk.is_ai_group
+
+## gtk.is_blade
+
+## gtk.is_one_handed_blade
+
+## gtk.is_weapon_group
+
+## gtk.place_flames
+
+## gtk.place_freeze_smoke
+
+## gtk.place_smoke
+
+## gtk.place_smoke_type
+
+## gtk.place_toxic_smoke
+
+## gtk.random_cdir
+
+## gtk.update_cloud
+
+## gtk.upgrade_master
+
+## gtk.upgrade_trait
+
+# AI
+
+## aitk.active_goto
+
+## aitk.active_hunt
+
+## aitk.active_hunt_no_player
+
+## aitk.claim
+
+## aitk.convert
+
+## aitk.disable
+
+## aitk.do_attack
+
+## aitk.do_attack_all
+
+## aitk.do_charged_attack
+
+## aitk.do_dual_mortar_attack
+
+## aitk.do_mortar_attack
+
+## aitk.do_reload
+
+## aitk.enemy
+
+## aitk.evaluate_dir
+
+## aitk.find
+
+## aitk.follow
+
+## aitk.follow_player
+
+## aitk.get_ranged
+
+## aitk.group
+
+## aitk.hunt
+
+## aitk.idle
+
+## aitk.is_enemy
+
+## aitk.neuter
+
+## aitk.on_attacked
+
+## aitk.on_noise
+
+## aitk.pet
+
+## aitk.pick_dir
+
+## aitk.pick_target
+
+## aitk.run_state
+
+## aitk.seek
+
+## aitk.sentry_attack
+
+## aitk.sentry_launcher_attack
+
+## aitk.sentry_repair
+
+## aitk.stagger
+
+## aitk.standard_ai
+
+## aitk.turret_attack
+
+## aitk.turret_idle
+
+## aitk.turret_on_attacked
+
+## aitk.turret_ready
+
+## aitk.wait
+
+## aitk.wait_and_idle
+
+## aitk.wait_and_idle_unless_attacked
 
