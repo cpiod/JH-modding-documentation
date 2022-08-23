@@ -374,6 +374,8 @@
 
 ## level:can_move
 
+## level:can_reload
+
 ## level:can_see_entity
 
 ## level:cdistance
@@ -430,6 +432,8 @@
 
 ## level:is_alive
 
+## level:is_shootable
+
 ## level:is_visible
 
 ## level:melee
@@ -449,6 +453,8 @@
 ## level:raw_get_cell
 
 ## level:recursive_entity_find
+
+## level:reload
 
 ## level:remove_entity
 
@@ -470,6 +476,8 @@
 
 ## level:try_move
 
+## level:use
+
 # ECS
 
 ## ecs:add
@@ -488,4 +496,65 @@
 
 ## ecs:root
 
+# Entity
+
+## entity:attach
+
+## entity:attribute
+
+## entity:child
+
+## entity:equip
+
+## entity:flag
+
+## entity:get_position
+
+## entity:get_slot
+
+## entity:get_weapon
+
+## entity:pickup
+
+## entity:stash_item
+
+# Nova engine
+
+## nova.log
+
+## nova.register_prototype
+
+## nova.register_storage
+
+## nova.require
+
+## nova.warning
+
+# Commands
+
+## COMMAND_ACTIVATE
+
+## COMMAND_DROP
+
+## COMMAND_MOVE
+
+## COMMAND_MOVE_E
+
+## COMMAND_MOVE_F
+
+## COMMAND_MOVE_N
+
+## COMMAND_MOVE_S
+
+## COMMAND_MOVE_W
+
+## COMMAND_PICKUP
+
+## COMMAND_REARM
+
+## COMMAND_RELOAD
+
+## COMMAND_USE
+
+## COMMAND_WAIT
 
