@@ -724,3 +724,70 @@ Get the position of an entity.
 
 ## aitk.wait_and_idle_unless_attacked
 
+# Flags
+
+## EF_ACTION
+
+## EF_ALIVE
+
+## EF_BUMPACTION
+
+## EF_CONSUMABLE
+
+## EF_CONTAINER
+
+## EF_ENTERACTION
+
+## EF_EXP_GEN
+
+## EF_EXPLODE
+
+## EF_FLYING
+
+## EF_FOLLOW
+
+## EF_HARD_COVER
+
+## EF_IFF
+
+## EF_INVISIBLE
+
+## EF_ITEM
+
+## EF_KILLED
+
+## EF_MARK
+
+## EF_NOCORPSE
+
+## EF_NOCOUNT
+
+## EF_NOFLY
+
+## EF_NOFX
+
+## EF_NOMOVE
+
+## EF_NOPATH
+
+## EF_NOPICKUP
+
+## EF_NOSHOOT
+
+## EF_NOSIGHT
+
+## EF_NOSPAWN
+
+## EF_PERMANENT
+
+## EF_PILLAR
+
+## EF_PLAYER
+
+## EF_POWERUP
+
+## EF_SOFT_COVER
+
+## EF_TARGETABLE
+
+
