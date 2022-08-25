@@ -396,15 +396,33 @@ Get the position of an entity.
 
 ## level:add_entity
 
+Add an entity to some location.
+
+    self:add_entity( "cryoberos", portal_area:random_coord() )
+
 ## level:apply_damage
+
+Apply damage. Parameters: origin, target, amount, ?, damage type
+
+    world:get_level():apply_damage( self, who, 5, ivec2(), "internal" )
 
 ## level:around
 
+Used for level generation
+
 ## level:beings
+
+Get a list of beings
+
+    for e in l:beings() do
 
 ## level:beings_in_area
 
+Get a list of beings in an area
+
 ## level:beings_in_cone
+
+Not used in the code
 
 ## level:can_close
 
@@ -440,7 +458,15 @@ Get the position of an entity.
 
 ## level:entities
 
+Get the list of entities
+
+    for e in l:entities() do
+
 ## level:entity_find
+
+Find some entity at a location (difference with get_entity?). Don’t use.
+
+    world:destroy( level:entity_find( c, "freeze_smoke_cloud" ) )
 
 ## level:find_coord
 
@@ -455,6 +481,10 @@ Get the position of an entity.
 ## level:get_cell_flags
 
 ## level:get_entity
+
+Get an entity at a location.
+
+    local d = l:get_entity( c, "cryomancer_crack" )
 
 ## level:get_item
 
@@ -522,15 +552,31 @@ Get the position of an entity.
 
 ## ecs:add
 
+Add an entity to another. Better use `attach`?
+
+    ecs:add( entity, "inventory" )
+
 ## ecs:child
 
+Get an attached entity
+
+    ecs:child( self, id )
+
 ## ecs:children
+
+Get all attached entities
+
+    for c in ecs:children( entity ) do
 
 ## ecs:first
 
 ## ecs:get
 
+Get the value of an attribute. Use `e.var` directly if possible.
+
 ## ecs:parent
+
+
 
 ## ecs:remove
 
@@ -538,29 +584,60 @@ Get the position of an entity.
 
 # Entity
 
-## entity:attach
+Check the file `data/lua/core/common.lua` to know more. These functions are built on the `world:` functions.
+Entity are metatable and use the ecs. Creation of variables is only possible in the `data` field.
 
-## entity:attribute
+## attach
 
-## entity:child
+Add some entity (weapon, properties, etc.)
 
-## entity:equip
+    self:attach( "pain" )
 
-## entity:flag
+## attribute
 
-## entity:get_position
+Get an attribute of this entity
 
-## entity:get_slot
+    local clip_size = weapon:attribute( "clip_size" )
 
-## entity:get_weapon
+## child
 
-## entity:pickup
+Get an attached entity
 
-## entity:stash_item
+    local pain = entity:child("pain")
+
+## equip
+
+Get an attribute of an entity
+
+    local max = target:attribute( "health" )
+
+## flag
+
+## get_position
+
+Get the coordinates of the entity
+
+    local pos = entity:get_position()
+
+# Being
+
+Being are a special kind of entity.
+
+## get_slot
+
+## get_weapon
+
+## pickup
+
+## stash_item
+
+Hide item on this being.
 
 # Nova engine
 
 ## nova.log
+
+Print a message in log.txt
 
 ## nova.register_prototype
 
@@ -568,7 +645,11 @@ Get the position of an entity.
 
 ## nova.require
 
+Import another Lua file
+
 ## nova.warning
+
+Print a message (warning) in log.txt
 
 # Commands
 
@@ -790,4 +871,26 @@ Get the position of an entity.
 
 ## EF_TARGETABLE
 
+# Damage types
 
+## Impact
+
+## Slash
+
+## Pierce
+
+## Punch
+
+## Toxin
+
+## EMP
+
+## Fire
+
+## Plasma
+
+## Acid
+
+## Internal
+
+Caused by bleeding
