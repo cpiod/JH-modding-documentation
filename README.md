@@ -894,3 +894,196 @@ Print a message (warning) in log.txt
 ## Internal
 
 Caused by bleeding
+
+# Keywords (used for generation)
+
+## accuracy
+
+## ammo
+
+## amp
+
+## area
+
+## armor
+
+## auto
+
+## bane
+
+## base_weapon
+
+## beyond
+
+## bot
+
+## branch_lock
+
+## callistio
+
+## callisto
+
+## callsito
+
+## civilian
+
+## cri
+
+## critical
+
+## cryo
+
+## cvisor
+
+## dante
+
+## demon
+
+## demon1
+
+## demon2
+
+## drone
+
+## durability
+
+## europa
+
+## exotic
+
+## explosives
+
+## fiend
+
+## former
+
+## former1
+
+## former2
+
+## former3
+
+## former4
+
+## gasmask
+
+## general
+
+## grenade
+
+## guard
+
+## hard
+
+## head
+
+## headset
+
+## healing
+
+## helmet
+
+## inv
+
+## io
+
+## kerberos
+
+## lockdown
+
+## lootbox
+
+## low_power
+
+## mag
+
+## major
+
+## marine
+
+## medical
+
+## medusa
+
+## melee
+
+## minilevel
+
+## minimum
+
+## minor
+
+## mod
+
+## movement
+
+## multishot
+
+## orb
+
+## pack
+
+## pain
+
+## pistol
+
+## pistols
+
+## rare_mod
+
+## ravager
+
+## reaver
+
+## reload
+
+## resist
+
+## robotic
+
+## rotary
+
+## scout
+
+## security_vault
+
+## semi
+
+## shotgun
+
+## shotguns
+
+## smgs
+
+## special
+
+## station
+
+## status
+
+## supplies
+
+## swarm
+
+## tech
+
+## toxic
+
+## turret
+
+## unique
+
+## vault
+
+## vhard
+
+## vision
+
+## visor
+
+## warmstatus
+
+## weak
+
+## weapon
+
